@@ -1,7 +1,7 @@
 .background{
   width: 100%;
   height: 300px;
-  background-color: #FFF1BD;
+  background-color: #D6E5FA;
   font-family: 'The Nautigal', cursive;
   color: #3FA796
 }
@@ -11,12 +11,25 @@
   position: absolute;
   left: 40px;
   top:30px;
+  animation-name: text;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
 }
 
 .background p{
   position: absolute;
   left: 260px;
   top:130px;
+}
+
+.background img{
+  width: 100px;
+
+}
+.hills{
+  height: auto;
+  position: absolute;
+  top:230px
 }
 
 #sun{
@@ -51,6 +64,13 @@
   width: 100%;
   height: 150px;
   background-color: black;
+}
+.road-line{
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  bottom:70px;
 }
 
 .car img{
@@ -95,7 +115,7 @@ animation-duration: 26s;
     transform: translateX(0px);
   }
   to{
-    transform: translateX(1200px);
+    transform: translateX(1150px);
   }
 }
 
@@ -104,6 +124,17 @@ animation-duration: 26s;
     transform: translateX(0px);
   }
   to{
-    transform: translateX(1200px);
+    transform: translateX(1150px);
+  }
+}
+
+@keyframes text{
+  from{
+    transform:scale(1);
+    color:#3FA796;
+  }
+  to{
+    transform: scale(1.1);
+    color: #ADC2A9;
   }
 }
